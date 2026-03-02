@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moderator | Elite Uchiha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="noise-texture"></div>
+    <canvas id="canvas-bg"></canvas>
+    <div class="vignette-overlay"></div>
+    
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <div class="genjutsu-layer">
+        <div class="mangekyou-overlay"></div>
+    </div>
+
+    <header>
+        <nav class="premium-nav">
+            <div class="logo">
+                <div class="sharingan-icon">
+                    <div class="tomoe t-1"></div><div class="tomoe t-2"></div><div class="tomoe t-3"></div>
+                </div>
+                <span>Doguin<span class="text-accent">.MOD</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#projects">Missões</a></li>
+                <li><a href="#skills">Arsenal</a></li>
+                <li><a href="#contact" class="nav-btn">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <div class="badge-tag">Elite Discord Specialist</div>
+                    <h1 class="main-title">A Ordem é <br><span class="text-accent glitch-text" data-text="Absoluta.">Absoluta.</span></h1>
+                    <p class="subtitle">Gerenciamento de crise, segurança avançada e estruturação de comunidades. A punição para a desordem é inevitável.</p>
+                    
+                    <div class="stats-container">
+                        <div class="stat-box">
+                            <span class="stat-number count" data-target="5">0</span>
+                            <span class="stat-label">Servidores</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-box">
+                            <span class="stat-number count" data-target="15">0</span><span class="stat-number">k+</span>
+                            <span class="stat-label">Membros Vigiados</span>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn-premium" id="btn-summon">
+                        <span class="btn-text">Invocar</span>
+                        <div class="btn-glow"></div>
+                    </a>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="profile-ring-1"></div>
+                    <div class="profile-ring-2"></div>
+                    <div class="profile-image-container">
+                        <img src="assets/Doguin.gif" alt="Profile" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Histórico de Batalha</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="cards-grid">
+                <div class="premium-card rank-s" data-tilt>
+                    <div class="card-image-wrapper">
+                        <img src="assets/tasonzin.png" alt="Tasonzin" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop'">
+                        <div class="card-overlay"></div>
+                        <div class="card-badge badge-mod">MODERADOR</div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Tasonzin</h3>
+                        <p>Gestão de crise nível S. Implementação de defesa absoluta e controle de raid.</p>
+                        <div class="tags"><span>Anti-Raid</span><span>Security</span></div>
+                    </div>
+                </div>
+
+                <div class="premium-card rank-s" data-tilt>
+                    <div class="card-image-wrapper">
+                        <img src="assets/anime-aura.png" alt="Anime Auras" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=600&auto=format&fit=crop'">
+                        <div class="card-overlay"></div>
+                        <div class="card-badge badge-mod">MODERADOR</div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Anime Auras</h3>
+                        <p>Liderança estratégica, configuração de automação e manutenção da paz.</p>
+                        <div class="tags"><span>Team Lead</span><span>Bots</span></div>
+                    </div>
+                </div>
+
+                <div class="premium-card rank-a" data-tilt>
+                    <div class="card-image-wrapper">
+                        <img src="assets/solar-studio.png" alt="Solar" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop'">
+                        <div class="card-overlay"></div>
+                        <div class="card-badge badge-tmod">T-MOD</div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Solar Studios</h3>
+                        <p>Monitoramento tático de canais de voz e texto.</p>
+                    </div>
+                </div>
+
+                <div class="premium-card rank-a" data-tilt>
+                    <div class="card-image-wrapper">
+                        <img src="assets/anime-infinity.png" alt="Infinity" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=600&auto=format&fit=crop'">
+                        <div class="card-overlay"></div>
+                        <div class="card-badge badge-tmod">T-MOD</div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Anime Infinity</h3>
+                        <p>Resolução rápida de tickets e suporte.</p>
+                    </div>
+                </div>
+
+                <div class="premium-card rank-a" data-tilt>
+                    <div class="card-image-wrapper">
+                        <img src="assets/anime-omega.png" alt="Omega" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1614680376593-902f74cf0d41?q=80&w=600&auto=format&fit=crop'">
+                        <div class="card-overlay"></div>
+                        <div class="card-badge badge-tmod">T-MOD</div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Anime Ômega X</h3>
+                        <p>Fase de treinamento e adaptação às regras.</p>
+                    </div>
+                </div>
+
+                    <div class="premium-card rank-a" data-tilt>
+                    <div class="card-image-wrapper">
+                        <img src="assets/av.png" alt="Omega" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1614680376593-902f74cf0d41?q=80&w=600&auto=format&fit=crop'">
+                        <div class="card-overlay"></div>
+                        <div class="card-badge badge-tmod">T-MOD</div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Anime Vortex</h3>
+                        <p>Auxiliando e ajudando na moderação do servidor.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Arsenal & Domínio</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-top">
+                        <span class="skill-name">Gestão de Tickets & Crise</span>
+                        <span class="skill-pct">100%</span>
+                    </div>
+                    <div class="bar-track"><div class="bar-fill color-red" style="width: 100%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-top">
+                        <span class="skill-name">Configuração de Bots (Automod, Logs)</span>
+                        <span class="skill-pct">90%</span>
+                    </div>
+                    <div class="bar-track"><div class="bar-fill color-purple" style="width: 90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-top">
+                        <span class="skill-name">Discernimento & Imparcialidade</span>
+                        <span class="skill-pct">95%</span>
+                    </div>
+                    <div class="bar-track"><div class="bar-fill color-red" style="width: 95%"></div></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="premium-footer">
+        <div class="footer-content">
+            <div class="sharingan-icon large-icon">
+                <div class="tomoe t-1"></div><div class="tomoe t-2"></div><div class="tomoe t-3"></div>
+            </div>
+            <h2 class="footer-title">Pronto para aprimorar sua comunidade?</h2>
+            <p class="footer-subtitle">Entre em contato pelas sombras.</p>
+            <div class="social-links">
+                <a href="https://discord.com/users/845064619209916457" class="social-btn"><i class="fab fa-discord"></i></a>
+            </div>
+            <p class="copyright">© 2026 Doguin Legacy All Rights Reserved For The Dog.</p>
+        </div>
+    </footer>
+
+    <script src="script/main.js"></script>
+</body>
+</html>
